@@ -26,6 +26,8 @@ set cursorline
 syntax on
 " enable mouse in all modes
 set mouse=a
+" disable visual linewrap by default
+set nowrap
 " enable filetype detection, indent and type-specific plugins
 filetype plugin indent on
 " always show status line
