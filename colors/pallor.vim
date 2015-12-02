@@ -48,10 +48,22 @@ call s:h('vimContinue', '', '')
 call s:h('vimVar', '', '')
 call s:h('vimFuncVar', '', '')
 call s:h('vimOption', '', '')
+call s:h('shRepeat', '', '')
+call s:h('shOption', '', '')
+call s:h('shSnglCase', '', '')
+call s:h('shStatement', '', '')
+call s:h('shShellVariables', '', '')
+call s:h('shCmdSubRegion', '', '')
+call s:h('shOperator', '', '')
+call s:h('shCommandSub', '', '')
+call s:h('shSetList', '', '')
 
 " things we don't know how to highlight yet
 call s:h('PreProc', 'inval', '')
 call s:h('Special', 'inval', '')
+call s:h('Repeat', 'inval', '')
+call s:h('Statement', 'inval', '')
+call s:h('Identifier', 'inval', '')
 
 " strings - red
 call s:h('String', 'red', '')
@@ -61,9 +73,9 @@ call s:h('Label', 'red', '')
 " keywords - blue
 call s:h('Keyword', 'blue', '')
 call s:h('Conditional', 'blue', '')
-call s:h('Repeat', 'blue', '')
 call s:h('Label', 'blue', '')
-call s:h('Statement', 'blue', '')
+call s:h('shSet', 'blue', '')
+call s:h('shLoop', 'blue', '')
 
 " constants - orange
 call s:h('Constant', 'orange', '')
