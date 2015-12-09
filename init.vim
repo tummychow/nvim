@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'gerw/vim-HiLinkTrace', { 'on': ['HLT', '<Plug>HiLinkTrace'] }
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
 
@@ -34,3 +35,23 @@ filetype plugin indent on
 set laststatus=2 
 
 colorscheme pallor
+
+" remap f/t to sneak
+nmap f <Plug>Sneak_s
+xmap f <Plug>Sneak_s
+omap f <Plug>Sneak_s
+nmap t <Plug>Sneak_S
+xmap t <Plug>Sneak_S
+omap t <Plug>Sneak_S
+" allow repeated f/t taps to iterate through matches
+let g:sneak#s_next = 1
+" prompt when you enter sneak
+let g:sneak#prompt = 'sneak >'
+" always streak
+let g:sneak#streak = 1
+" exit streak mode by pressing escape
+let g:sneak#streak_esc = '\<esc>'
+" do not special-case in file manager buffers
+let g:sneak#map_netrw = 0
+" remove sneak z text object
+let g:sneak#textobject_z = 0
