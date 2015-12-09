@@ -101,6 +101,9 @@ call s:h('DiffSubname', 'comment', '')
 call s:h('DiffLine', 'yellow', '')
 call s:h('DiffFile', 'yellow', '')
 
+" TODO comments
+call s:h('Todo', '', '')
+
 " ui elements
 call s:h('LineNr', 'comment' ,'linehl') " the line number gutter
 call s:h('CursorLine', '', 'linehl') " the visual line that the cursor is on
