@@ -76,6 +76,7 @@ call s:h('Conditional', 'blue', '')
 call s:h('Label', 'blue', '')
 call s:h('shSet', 'blue', '')
 call s:h('shLoop', 'blue', '')
+call s:h('xmlDocTypeKeyword', 'blue', '')
 
 " constants - orange
 call s:h('Constant', 'orange', '')
@@ -90,6 +91,8 @@ call s:h('StorageClass', 'yellow', '')
 
 " functions - green
 call s:h('Function', 'green', '')
+" xmlTag is grouped under function, but xmlEndTag is not
+call s:h('xmlEndTag', 'green', '')
 
 " diffs
 call s:h('DiffAdd', 'green', '')
