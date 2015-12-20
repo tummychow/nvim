@@ -71,6 +71,16 @@ call s:h('gitCommitSelectedFile', 'green', '')
 call s:h('gitCommitDiscardedFile', 'red', '')
 call s:h('gitCommitUntrackedFile', 'orange', '')
 
+" CSS highlighting tweaks
+highlight link atKeyword Keyword
+highlight link cssImportant Keyword
+highlight link cssPseudoClassId Keyword
+call s:h('cssAttributeSelector', '', '')
+call s:h('cssBraces', '', '')
+call s:h('cssAttrComma', '', '')
+call s:h('cssClassName', '', '')
+call s:h('cssIdentifier', '', '')
+
 " things we don't know how to highlight yet
 call s:h('PreProc', 'inval', '')
 call s:h('Special', 'inval', '')
