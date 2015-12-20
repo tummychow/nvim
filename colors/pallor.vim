@@ -58,6 +58,19 @@ call s:h('shOperator', '', '')
 call s:h('shCommandSub', '', '')
 call s:h('shSetList', '', '')
 
+" git commit highlighting matches my git color settings
+call s:h('gitCommitSummary', '', '')
+highlight link gitCommitSelected Comment
+highlight link gitCommitDiscarded Comment
+highlight link gitCommitUntracked Comment
+highlight link gitCommitHeader Comment
+call s:h('gitCommitFile', '', '')
+call s:h('gitCommitType', '', '')
+call s:h('gitCommitBranch', 'yellow', '')
+call s:h('gitCommitSelectedFile', 'green', '')
+call s:h('gitCommitDiscardedFile', 'red', '')
+call s:h('gitCommitUntrackedFile', 'orange', '')
+
 " things we don't know how to highlight yet
 call s:h('PreProc', 'inval', '')
 call s:h('Special', 'inval', '')
