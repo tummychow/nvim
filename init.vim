@@ -22,6 +22,8 @@ set mouse=a
 set nowrap
 " enable filetype detection, indent and type-specific plugins
 filetype plugin indent on
+" create vertical splits to the right
+set splitright
 
 colorscheme pallor
 
