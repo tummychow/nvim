@@ -71,6 +71,15 @@ call s:h('gitCommitSelectedFile', 'green', '')
 call s:h('gitCommitDiscardedFile', 'red', '')
 call s:h('gitCommitUntrackedFile', 'orange', '')
 
+" markdown
+call s:h('markdownHeadingDelimiter', 'comment', '')
+call s:h('markdownH1', 'yellow', '')
+call s:h('markdownH2', 'yellow', '')
+call s:h('markdownH3', 'yellow', '')
+call s:h('markdownH4', 'yellow', '')
+call s:h('markdownH5', 'yellow', '')
+call s:h('markdownH6', 'yellow', '')
+
 " CSS highlighting tweaks
 highlight link atKeyword Keyword
 highlight link cssImportant Keyword
