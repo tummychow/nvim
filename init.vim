@@ -36,12 +36,14 @@ xmap t <Plug>Sneak_S
 omap t <Plug>Sneak_S
 " allow repeated f/t taps to iterate through matches
 let g:sneak#s_next = 1
+" f always goes forward, t always goes backward
+let g:sneak#absolute_dir = 1
 " prompt when you enter sneak
 let g:sneak#prompt = 'sneak >'
 " always streak
 let g:sneak#streak = 1
 " exit streak mode by pressing escape
-let g:sneak#streak_esc = '\<esc>'
+let g:sneak#streak_esc = "\<esc>"
 " do not special-case in file manager buffers
 let g:sneak#map_netrw = 0
 " remove sneak z text object
