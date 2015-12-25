@@ -20,10 +20,16 @@ syntax on
 set mouse=a
 " disable visual linewrap by default
 set nowrap
+" but if we do use wrap, we probably want to break at a word boundary
+set linebreak
 " enable filetype detection, indent and type-specific plugins
 filetype plugin indent on
 " create vertical splits to the right
 set splitright
+
+" use visual jk, works more intuitively when wrap is on
+nnoremap j gj
+nnoremap k gk
 
 colorscheme pallor
 
