@@ -10,6 +10,9 @@ call plug#end()
 set ruler
 " print line numbers
 set number
+" wildmenu completion should use longest common prefix rather than
+" first match
+set wildmode=longest:full
 " show partial commands
 set showcmd
 " highlight the cursor's current visual line
