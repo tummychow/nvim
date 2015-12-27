@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'gerw/vim-HiLinkTrace', { 'on': ['HLT', '<Plug>HiLinkTrace'] }
 Plug 'justinmk/vim-sneak'
 Plug 'justinmk/vim-dirvish'
+Plug 'tpope/vim-sleuth'
 
 call plug#end()
 
