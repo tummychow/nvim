@@ -22,6 +22,8 @@ set cursorline
 syntax on
 " enable mouse in all modes
 set mouse=a
+" set xterm title
+set title
 " disable visual linewrap by default
 set nowrap
 " but if we do use wrap, we probably want to break at a word boundary
