@@ -79,6 +79,7 @@ call s:h('markdownH3', 'yellow', '')
 call s:h('markdownH4', 'yellow', '')
 call s:h('markdownH5', 'yellow', '')
 call s:h('markdownH6', 'yellow', '')
+call s:h('markdownCodeDelimiter', 'blue', '')
 
 " CSS highlighting tweaks
 highlight link atKeyword Keyword
