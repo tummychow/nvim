@@ -71,8 +71,15 @@ call s:h('gitCommitSelectedFile', 'green', '')
 call s:h('gitCommitDiscardedFile', 'red', '')
 call s:h('gitCommitUntrackedFile', 'orange', '')
 
+" git config highlights
+highlight link gitconfigDelim Comment
+call s:h('gitconfigSection', 'yellow', '')
+call s:h('gitconfigVariable', 'blue', '')
+call s:h('gitconfigEscape', 'orange', '')
+
 " markdown
 call s:h('markdownHeadingDelimiter', 'comment', '')
+call s:h('markdownListMarker', 'comment', '')
 call s:h('markdownH1', 'yellow', '')
 call s:h('markdownH2', 'yellow', '')
 call s:h('markdownH3', 'yellow', '')
@@ -80,6 +87,7 @@ call s:h('markdownH4', 'yellow', '')
 call s:h('markdownH5', 'yellow', '')
 call s:h('markdownH6', 'yellow', '')
 call s:h('markdownCodeDelimiter', 'blue', '')
+call s:h('markdownCode', 'blue', '')
 
 " CSS highlighting tweaks
 highlight link atKeyword Keyword
