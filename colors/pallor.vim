@@ -36,6 +36,9 @@ function! s:h(group, fg, bg)
 endfun
 
 call s:h('Normal', 'fg', 'bg')
+" seems to be necessary to make sneak highlight the first match in streak mode
+" properly?
+call s:h('Cursor', 'bg', 'fg')
 call s:h('Comment', 'comment', '')
 call s:h('shQuote', 'comment', '')
 
@@ -76,6 +79,12 @@ highlight link gitconfigDelim Comment
 call s:h('gitconfigSection', 'yellow', '')
 call s:h('gitconfigVariable', 'blue', '')
 call s:h('gitconfigEscape', 'orange', '')
+
+" yaml
+highlight link yamlFlowStringDelimiter Comment
+highlight link yamlBlockCollectionItemStart Comment
+call s:h('yamlKeyValueDelimiter', '', '')
+call s:h('yamlBlockMappingKey', 'blue', '')
 
 " markdown
 call s:h('markdownHeadingDelimiter', 'comment', '')
