@@ -80,6 +80,16 @@ call s:h('gitconfigSection', 'yellow', '')
 call s:h('gitconfigVariable', 'blue', '')
 call s:h('gitconfigEscape', 'orange', '')
 
+" git interactive rebase highlighting
+highlight link gitrebasePick Keyword
+highlight link gitrebaseReword Keyword
+highlight link gitrebaseEdit Keyword
+highlight link gitrebaseSquash Keyword
+highlight link gitrebaseFixup Keyword
+highlight link gitrebaseExec Keyword
+highlight link gitrebaseDrop Keyword
+highlight link gitrebaseHash Constant
+
 " yaml
 highlight link yamlFlowStringDelimiter Comment
 highlight link yamlBlockCollectionItemStart Comment
