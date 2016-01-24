@@ -90,6 +90,11 @@ highlight link gitrebaseExec Keyword
 highlight link gitrebaseDrop Keyword
 highlight link gitrebaseHash Constant
 
+" json
+highlight link jsonQuote Comment
+highlight link jsonEscape Constant
+call s:h('jsonBraces', '', '')
+
 " yaml
 highlight link yamlFlowStringDelimiter Comment
 highlight link yamlBlockCollectionItemStart Comment
@@ -117,6 +122,10 @@ call s:h('cssBraces', '', '')
 call s:h('cssAttrComma', '', '')
 call s:h('cssClassName', '', '')
 call s:h('cssIdentifier', '', '')
+
+" tex/latex/xetex
+highlight link texCmdName Function
+highlight link texStatement Function
 
 " things we don't know how to highlight yet
 call s:h('PreProc', 'inval', '')
