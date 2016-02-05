@@ -123,6 +123,13 @@ call s:h('cssAttrComma', '', '')
 call s:h('cssClassName', '', '')
 call s:h('cssIdentifier', '', '')
 
+" html
+highlight link htmlTag Comment
+highlight link htmlEndTag Comment
+highlight link htmlTagName Function
+highlight link htmlSpecialTagName Function
+call s:h('htmlTitle', '', '')
+
 " tex/latex/xetex
 highlight link texCmdName Function
 highlight link texStatement Function

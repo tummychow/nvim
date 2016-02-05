@@ -5,6 +5,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-sleuth'
 
+Plug 'othree/html5.vim'
 Plug 'fatih/vim-go'
 
 call plug#end()
