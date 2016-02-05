@@ -5,6 +5,8 @@ Plug 'justinmk/vim-sneak'
 Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-sleuth'
 
+Plug 'fatih/vim-go'
+
 call plug#end()
 
 " remap f/t to sneak
@@ -28,6 +30,13 @@ let g:sneak#streak_esc = "\<esc>"
 let g:sneak#map_netrw = 0
 " remove sneak z text object
 let g:sneak#textobject_z = 0
+
+" go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_highlight_build_constraints = 1
 
 " print cursor position
 set ruler

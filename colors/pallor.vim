@@ -127,6 +127,13 @@ call s:h('cssIdentifier', '', '')
 highlight link texCmdName Function
 highlight link texStatement Function
 
+" go
+highlight link goRepeat Keyword
+highlight link goStatement Keyword
+highlight link goDirective Keyword
+highlight link goMethod Function
+highlight link goFormatSpecifier Constant
+
 " things we don't know how to highlight yet
 call s:h('PreProc', 'inval', '')
 call s:h('Special', 'inval', '')
