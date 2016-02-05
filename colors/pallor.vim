@@ -141,6 +141,16 @@ highlight link goDirective Keyword
 highlight link goMethod Function
 highlight link goFormatSpecifier Constant
 
+" ruby
+highlight link rubySharpBang Comment
+highlight link rubyStringDelimiter Comment
+highlight link rubyInterpolationDelimiter Comment
+highlight link rubyInclude Keyword
+highlight link rubyControl Keyword
+highlight link rubyRepeat Keyword
+call s:h('rubyPredefinedIdentifier', '', '')
+call s:h('rubyBlockParameter', '', '')
+
 " things we don't know how to highlight yet
 call s:h('PreProc', 'inval', '')
 call s:h('Special', 'inval', '')
