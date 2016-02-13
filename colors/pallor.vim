@@ -148,6 +148,7 @@ highlight link rubyInterpolationDelimiter Comment
 highlight link rubyInclude Keyword
 highlight link rubyControl Keyword
 highlight link rubyRepeat Keyword
+highlight link rubyDefine Keyword
 call s:h('rubyPredefinedIdentifier', '', '')
 call s:h('rubyBlockParameter', '', '')
 
