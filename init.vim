@@ -4,6 +4,7 @@ Plug 'gerw/vim-HiLinkTrace', { 'on': ['HLT', '<Plug>HiLinkTrace'] }
 Plug 'justinmk/vim-sneak'
 Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-surround'
 
 Plug 'othree/html5.vim'
 Plug 'fatih/vim-go'
