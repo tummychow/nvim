@@ -33,6 +33,10 @@ let g:sneak#map_netrw = 0
 " remove sneak z text object
 let g:sneak#textobject_z = 0
 
+" markdown configuration tweaks
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd FileType markdown set wrap
+
 " go
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
