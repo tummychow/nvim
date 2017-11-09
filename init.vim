@@ -69,6 +69,13 @@ set linebreak
 filetype plugin indent on
 " create vertical splits to the right
 set splitright
+" disable guicursor
+" right now there is no way to restore guicursor to its "original" setting
+" https://github.com/neovim/neovim/issues/4396#issuecomment-302945410
+" this is an inherent limitation of the cursor escape code
+" st doesn't support a reset-to-default extension for this escape code
+" https://git.suckless.org/st/tree/st.c?id=c63a87cd936c1eeef14c4c21572e5b782d3df4bc#n2473
+set guicursor=
 
 " use visual jk, works more intuitively when wrap is on
 nnoremap j gj
